@@ -11,6 +11,8 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
   <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/tablet.css">
+  <link rel="stylesheet" href="./css/desktop.css">
   <title>WebStudio</title>
 </head>
 
@@ -41,16 +43,69 @@
           </li>
         </ul>
       </address>
+      <button class="menu-open-btn" data-menu-open>
+        <svg class="menu-open-icon" width="24" height="24">
+          <use href="./images/icons.svg#icon-heroicons"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="mob-menu" data-menu>
+      <div class="mob-container">
+        <button class="menu-close-btn" data-menu-close>
+          <svg class="menu-open-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mob-nav-list">
+          <li><a href="" class="mob-nav-link active">Studio</a></li>
+          <li><a href="" class="mob-nav-link">Portfolio</a></li>
+          <li><a href="" class="mob-nav-link">Contacts</a></li>
+        </ul>
+        <ul class="mob-adres-list">
+          <li><a href="tel:+110001111111" class="mob-adres-link active">+11 (000) 111-11-11</a></li>
+          <li><a href="mailto:info@devstudio.com" class="mob-adres-link">info@devstudio.com</a></li>
+        </ul>
+        <ul class="mob-soc-list">
+          <li class="mob-soc-item">
+            <a href="" class="mob-soc-link">
+              <svg class="mob-soc-icon"  width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-soc-item">
+            <a href="" class="mob-soc-link">
+              <svg  class="mob-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-soc-item">
+            <a href="" class="mob-soc-link">
+              <svg  class="mob-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-soc-item">
+            <a href="" class="mob-soc-link">
+            <svg  class="mob-soc-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
   <main>
-    <section class="hero">
+    <!-- <section class="hero">
       <div class="container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
         <button class="hero-btn" type="button">Order Service</button>
       </div>
-    </section>
-    <section class="about">
+    </section> -->
+    <!-- <section class="about">
       <div class="container">
         <h2 class="visually-hidden">About Us</h2>
         <ul class="about-list">
@@ -104,8 +159,8 @@
           </li>
         </ul>
       </div>
-    </section>
-    <section class="team">
+    </section> -->
+    <!-- <section class="team">
       <div class="container">
         <h2 class="team-title">Our Team</h2>
         <ul class="team-list">
@@ -259,8 +314,8 @@
           </li>
         </ul>
       </div>
-    </section>
-    <section class="portfolio">
+    </section> -->
+    <!-- <section class="portfolio">
       <div class="container">
         <h2 class="portfolio-title">Our Portfolio</h2>
         <ul class="portfolio-list">
@@ -357,9 +412,9 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
   </main>
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container footer-container">
       <div class="logo-wrap">
         <a class="logo-footer" href="./index.html" target="_blank">Web<span class="accent-web-footer">Studio</span></a>
@@ -413,7 +468,7 @@
         </form>
       </div>
     </div>
-  </footer>
+  </footer> -->
   <div class="backdrop">
     <div class="modal">
       <button type="button" class="modal-close-btn">
@@ -472,6 +527,7 @@
       </form>
     </div>
   </div>
+  <script src="./js/mob-menu.js"></script>
 </body>
 
 </html>

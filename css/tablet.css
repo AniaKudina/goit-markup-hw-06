@@ -1,0 +1,30 @@
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 768px;
+    }
+    .header-nav-list{
+        display: flex;
+
+    }
+    .adress{
+     display: block;
+    }
+    .menu-open-btn{
+        display: none;
+    }
+    .logo-header{
+        margin-right: 120px;
+    }
+    .header-adress-list{
+        flex-direction: column;
+        gap: 12px;
+    }
+        .link-adress{
+        font-size: 12px;
+        line-height: 1.17;
+        }
+        .mob-menu{
+            display: none;
+        }
+
+    }
