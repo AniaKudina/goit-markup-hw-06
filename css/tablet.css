@@ -1,30 +1,73 @@
-@media screen and (min-width:768px) {
-    .container {
-        max-width: 768px;
-    }
-    .header-nav-list{
-        display: flex;
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .header-nav-list {
+    display: flex;
+  }
+  .adress {
+    display: block;
+  }
+  .menu-open-btn {
+    display: none;
+  }
+  .logo-header {
+    margin-right: 120px;
+  }
+  .header-adress-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .link-adress {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .mob-menu {
+    display: none;
+  }
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-tab-1x.jpg);
+    padding: 112px 0;
+  }
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+  .about-list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .about-list-item {
+  width: calc((100% - 24px) / 2);
+}
+.about-list-title{
+    text-align: left;
+}
+.team-list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px 24px;
+}
+}
+/* медіа для картинок */
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-tab-2x.jpg);
+  }
 
-    }
-    .adress{
-     display: block;
-    }
-    .menu-open-btn{
-        display: none;
-    }
-    .logo-header{
-        margin-right: 120px;
-    }
-    .header-adress-list{
-        flex-direction: column;
-        gap: 12px;
-    }
-        .link-adress{
-        font-size: 12px;
-        line-height: 1.17;
-        }
-        .mob-menu{
-            display: none;
-        }
-
-    }
+}

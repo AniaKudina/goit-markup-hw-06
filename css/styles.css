@@ -280,23 +280,23 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/hero-mob-1x.jpg);
   max-width: 1440px;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 188px 0;
+  padding: 72px  0;
   text-align: center;
 }
 
 .hero-title {
-  max-width: 496px;
+  max-width: 200px;
   color: #fff;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   margin: 0 auto;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
 }
 
 .hero-btn {
@@ -323,11 +323,26 @@ img {
   background-color: #404bbf;
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+
+screen and (min-resolution: 2dppx) and (max-width: 767px) {
+
+  .hero{
+
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+
+      url(../images/hero-mob-2x.jpg);
+
+  }
+
+}
 /*---------about---------*/
 
 .about {
   background: #fff;
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .visually-hidden {
@@ -346,18 +361,19 @@ img {
 
 .about-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
 }
 
-.about-list-item {
+/* .about-list-item {
   width: calc((100% - 72px) / 4);
-}
+} */
 .icon-wrap {
   height: 112px;
   border-radius: 4px;
   border: 1px solid #8e8f99;
   background: #f4f4fd;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   margin-bottom: 8px;
@@ -365,21 +381,22 @@ img {
 
 .about-list-title {
   color: #2e2f42;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .about-list-text {
+  font-weight: 500;
   line-height: 1.5;
 }
 
 /*---------team---------*/
 .team {
   background-color: #f4f4fd;
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .team-title {
@@ -394,11 +411,12 @@ img {
 
 .team-list {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 72px;
+  align-items: center;
 }
 
 .team-list-item {
-  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
