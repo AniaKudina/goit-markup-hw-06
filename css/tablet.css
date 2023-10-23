@@ -56,6 +56,34 @@
     justify-content: center;
     gap: 64px 24px;
 }
+.portfolio-list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+}
+.portfolio-list-item{
+    width: calc((100% - 24px) / 2 );
+}
+.footer-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    padding-left: 108px;
+}
+.logo-footer{
+    text-align: left;
+}
+.footer-soc-title{
+    text-align: left;
+}
+.footer-form{
+    flex-direction: row;
+}
+.modal{
+    padding: 72px 24px 24px;
+    width: 408px;
+}
+
 }
 /* медіа для картинок */
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
